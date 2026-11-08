@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="52" viewBox="0 0 900 52">
+  <rect x="0" y="12" width="4" height="28" rx="2" fill="#8b9eb7"/>
+  <text x="18" y="35" font-family="'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="24" font-weight="600" fill="#e6edf3">Selected Work</text>
+  <rect x="251" y="25" width="649" height="1" fill="#222a33"/>
+</svg>

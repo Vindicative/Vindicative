@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="240" viewBox="0 0 900 240">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#131a22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.85" cy="0.2" r="0.6">
+      <stop offset="0" stop-color="#8b9eb7" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#8b9eb7" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="240" rx="16" fill="url(#g)"/>
+  <rect width="900" height="240" rx="16" fill="url(#glow)"/>
+  <rect x="0.5" y="0.5" width="899" height="239" rx="15.5" fill="none" stroke="#222a33"/>
+  <text x="56" y="112" font-family="'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="60" font-weight="700" fill="#e6edf3" letter-spacing="-1">phklie</text>
+  <text x="58" y="152" font-family="'Segoe UI', -apple-system, Helvetica, Arial, sans-serif" font-size="20" fill="#7d8590">Developer &#183; Builder &#183; Always learning</text>
+  <rect x="58" y="176" width="48" height="3" rx="1.5" fill="#8b9eb7"/>
+  <text x="58" y="208" font-family="'SF Mono', Consolas, 'Courier New', monospace" font-size="14" fill="#4d5560">github.com/phklie</text>
+</svg>
