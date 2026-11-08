@@ -2,7 +2,7 @@ name: Update activity graph
 
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "30 */6 * * *"
   workflow_dispatch:
   push:
     paths:
@@ -30,4 +30,5 @@ jobs:
           git add .github/assets/activity.svg
           git diff --cached --quiet && echo "No changes." && exit 0
           git commit -m "chore: update activity graph"
+          git pull --rebase
           git push
