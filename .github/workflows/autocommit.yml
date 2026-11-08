@@ -15,15 +15,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Update timestamp file
-        run: date -u +"%Y-%m-%d %H:%M UTC" > .last-update
+      - name: Update date file
+        run: TZ=Asia/Riyadh date +"%Y-%m-%d" > .github/.last-update
 
       - name: Commit and push
         run: |
-          # The author email must be linked to your GitHub account,
-          # otherwise the commit will not show on your contribution graph.
           git config user.name "${{ github.repository_owner }}"
           git config user.email "${{ github.repository_owner_id }}+${{ github.repository_owner }}@users.noreply.github.com"
-          git add .last-update
-          git commit -m "chore: update $(date -u +%Y-%m-%d_%H:%M)"
+          git add .github/.last-update
+          git commit --allow-empty -m "chore: update $(TZ=Asia/Riyadh date +%Y-%m-%d)"
+          git pull --rebase
           git push
