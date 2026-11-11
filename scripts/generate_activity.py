@@ -8,7 +8,7 @@ Usage:
 
 Environment:
     GH_TOKEN / GITHUB_TOKEN   token used for the GitHub GraphQL API
-    GH_USER                   username (defaults to GITHUB_REPOSITORY_OWNER, then "phklie")
+    GH_USER                   username (defaults to GITHUB_REPOSITORY_OWNER, then "Vindicative")
 """
 import datetime as dt
 import json
