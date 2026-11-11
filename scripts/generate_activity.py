@@ -148,7 +148,7 @@ def main():
         token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
         if not token:
             sys.exit("Set GH_TOKEN (or GITHUB_TOKEN), or use --empty / --demo.")
-        user = os.environ.get("GH_USER") or os.environ.get("GITHUB_REPOSITORY_OWNER") or "phklie"
+        user = os.environ.get("GH_USER") or os.environ.get("GITHUB_REPOSITORY_OWNER") or "Vindicative"
         weeks, total = fetch(user, token)
 
     with open(out_path, "w", encoding="utf-8") as f:
